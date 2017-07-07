@@ -1,0 +1,13 @@
+header {
+    text-align: center;
+    margin: auto;
+    color: darkblue;
+    width: 100%;
+    opacity: 0.95;
+    margin-bottom: 5%;
+}
+
+header #app-title {
+    margin: 0px auto;
+    font-size: -webkit-xxx-large;
+}

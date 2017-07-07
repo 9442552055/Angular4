@@ -1,0 +1,48 @@
+<nav id="menu-container">
+    <button md-icon-button [mdMenuTriggerFor]="menu">
+            <md-icon md-font-set="material-icons" class="material-icons">more_vert</md-icon>
+    </button>
+    <md-menu #menu="mdMenu">
+        <button md-menu-item *ngFor="let menu of menuItems" routerLink="{{'/'+menu.url}}" routerLinkActive="active">
+            <md-icon md-font-set="material-icons" class="material-icons">{{menu.icon}}</md-icon>
+            <span>{{menu.text}}</span>
+        </button>
+    </md-menu>
+
+    <div md-menu-bar>
+        <md-menu>
+            <button ng-click="$mdMenu.open()">File</button>
+            <div md-menu-content>
+                <span md-menu-item>
+                    <button md-button ng-click="ctrl.sampleAction('share', $event)">
+                        Share...
+                        </button>
+                    </span>
+                <span md-menu-divider></span>
+
+                <span md-menu-item>
+                <md-menu>
+                    <button md-button ng-click="$mdMenu.open()">New</button>
+                    <div md-menu-content>
+                        <span md-menu-item>
+                            <button md-button ng-click="ctrl.sampleAction('New Document', $event)">Document</button>
+                        </span>
+                <span md-menu-item>
+                                <button md-button ng-click="ctrl.sampleAction('New Spreadsheet', $event)">Spreadsheet</button>
+                            </span>
+                <span md-menu-item>
+                                <button md-button ng-click="ctrl.sampleAction('New Presentation', $event)">Presentation</button>
+                            </span>
+                <span md-menu-item>
+                                <button md-button ng-click="ctrl.sampleAction('New Form', $event)">Form</button>
+                            </span>
+                <span md-menu-item>
+                                <button md-button ng-click="ctrl.sampleAction('New Drawing', $event)">Drawing</button>
+                            </span>
+            </div>
+        </md-menu>
+        </span>
+    </div>
+    </md-menu>
+    </div>
+</nav>

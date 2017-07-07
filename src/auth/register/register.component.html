@@ -1,0 +1,21 @@
+<form class="form-signup col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <h3> Sign up </h3>
+
+    <md-input-container class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+        <!--<label for="inputEmail" class="sr-only">Email address</label>-->
+        <input name="text_username" [(ngModel)]="userName" mdInput type="email" class="form-control" placeholder="Email address" required="" autofocus="">
+    </md-input-container>
+
+    <md-input-container class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+        <!--<label for="inputPassword" class="sr-only">Password</label>-->
+        <input name="text_password" [(ngModel)]="password" mdInput type="password" class="form-control" placeholder="Password" required="">
+    </md-input-container>
+
+    <md-input-container class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+        <!--<label for="inputPassword" class="sr-only">Password</label>-->
+        <input name="text_password" [(ngModel)]="confirmPassword" mdInput type="password" class="form-control" placeholder="Confirm Password" required="">
+    </md-input-container>
+
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+</form>
