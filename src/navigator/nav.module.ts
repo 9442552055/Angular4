@@ -8,7 +8,6 @@ import { routing } from '../app.routes';
 import {HashLocationStrategy,  LocationStrategy} from '@angular/common';
 import { MdMenuModule, MdButtonModule} from '@angular/material';
 
-debugger;
 @NgModule({
   declarations: [NavComponent],
   imports: [routing,BrowserModule, MdMenuModule, MdButtonModule],
